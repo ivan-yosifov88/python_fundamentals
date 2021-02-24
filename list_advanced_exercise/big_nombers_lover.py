@@ -1,0 +1,5 @@
+list_of_numbers = input().split()
+# new_list = list(reversed(list_of_numbers))
+# print("".join(new_list))
+new_list = sorted(list_of_numbers, reverse=True)
+print("".join(new_list))
