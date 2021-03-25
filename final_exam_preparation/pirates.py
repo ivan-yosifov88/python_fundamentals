@@ -51,7 +51,7 @@ while not data == "End":
 
     data = input()
 
-sorted_targets = dict(sorted(target.items(), key=lambda x:(-x[1][1],x[0])))
+sorted_targets = dict(sorted(target.items(), key=lambda x:(-x[1]['mileage'],x[0])))
 print(f"Ahoy, Captain! There are {len(sorted_targets.keys())} wealthy settlements to go to:")
 for town in sorted_targets.items():
     print(f"{town[0]} -> Population: {town[1][0]} citizens, Gold: {town[1][1]} kg")
